@@ -1,6 +1,6 @@
 {
   "name": "chartjs-node-plugin-colorschemes",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Nodejs compatible fork of chartjs-plugin-colorschemes",
   "main": "src/index.js",
   "repository": {
