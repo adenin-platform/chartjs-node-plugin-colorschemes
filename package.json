@@ -17,10 +17,10 @@
     "office",
     "tableau"
   ],
-  "contributors": [{
-    "name": "olliejm"
-  }],
-  "author": "Akihiko Kusanagi <nagi@nagi-p.com> (https://nagix.github.io/)",
+  "contributors": [
+    "Akihiko Kusanagi <nagi@nagi-p.com> (https://nagix.github.io/)"
+  ],
+  "author": "olliejm",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/adenin-platform/chartjs-node-plugin-colorschemes/issues"

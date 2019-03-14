@@ -7,7 +7,7 @@ This is a nodejs compatible fork of [chartjs-plugin-colorschemes](https://github
 To register the plugin to chartjs-node, use the following:
 
 ```js
-const colorschemes = require('chartjs-plugin-colorschemes');
+const colorschemes = require('chartjs-node-plugin-colorschemes');
 
 const chart = new ChartjsNode(parsed.dimensions.width, parsed.dimensions.height);
 
