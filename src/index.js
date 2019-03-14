@@ -1,10 +1,9 @@
 'use strict';
 
-import Chart from 'chart.js';
-import colorschemes from './colorschemes/index';
-import colorSchemesPlugin from './plugins/plugin.colorschemes';
+module.exports = (instance) => {
+  const colorSchemesPlugin = require('./plugins/plugin.colorschemes')(instance);
+  const colorschemes = require('./colorschemes/index');
 
-Chart.colorschemes = colorschemes;
-Chart.plugins.register(colorSchemesPlugin);
-
-export default colorSchemesPlugin;
+  instance.colorschemes = colorschemes;
+  instance.plugins.register(colorSchemesPlugin);
+};

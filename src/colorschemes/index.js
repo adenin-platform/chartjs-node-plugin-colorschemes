@@ -1,11 +1,11 @@
 'use strict';
 
-import brewer from './colorschemes.brewer';
-import office from './colorschemes.office';
-import tableau from './colorschemes.tableau';
+const brewer = require('./colorschemes.brewer');
+const office = require('./colorschemes.office');
+const tableau = require('./colorschemes.tableau');
 
-export default {
-	brewer: brewer,
-	office: office,
-	tableau: tableau
+module.exports = {
+  brewer: brewer,
+  office: office,
+  tableau: tableau
 };
