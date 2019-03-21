@@ -67,6 +67,16 @@ module.exports = (Chart) => {
                 dataset.colorschemes.backgroundColor = true;
               }
               break;
+            case 'radialGauge': {
+              const gradient = chart.ctx.createLinearGradient(0, 110, 220, 0);
+
+              gradient.addColorStop(0, color);
+              gradient.addColorStop(1, scheme[options.reverse ? length - colorIndex + 2 : colorIndex + 2]);
+
+              chart.config.options.trackColor = gradient;
+
+              break;
+            }
             // For the other chart, only backgroundColor is set
             default:
               if (typeof dataset.backgroundColor === 'undefined') {
