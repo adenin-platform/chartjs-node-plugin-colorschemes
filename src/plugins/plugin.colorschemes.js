@@ -73,7 +73,8 @@ module.exports = (Chart) => {
               gradient.addColorStop(0, color);
               gradient.addColorStop(1, scheme[options.reverse ? length - colorIndex + 2 : colorIndex + 2]);
 
-              chart.config.options.trackColor = gradient;
+              dataset.backgroundColor = gradient;
+              dataset.colorschemes.backgroundColor = true;
 
               break;
             }
