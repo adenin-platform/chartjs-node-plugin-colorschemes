@@ -68,7 +68,7 @@ module.exports = (Chart) => {
               }
               break;
             case 'radialGauge': {
-              const gradient = chart.ctx.createLinearGradient(0, 110, 220, 0);
+              const gradient = chart.ctx.createLinearGradient(0, 100, 170, 0);
 
               gradient.addColorStop(0, color);
               gradient.addColorStop(1, scheme[options.reverse ? length - colorIndex + 2 : colorIndex + 2]);
